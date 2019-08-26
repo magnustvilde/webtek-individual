@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Canvas</title>
+   </head>
+   <body>
+
+      <canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;"></canvas>
+
+      <script>
+         const canvas = document.getElementById('myCanvas');
+         const ctx = canvas.getContext('2d');
+
+         function createTriangle(fromX, fromY, secondX, secondY, thirdX, thirdY, fillcolor) {
+            ctx.beginPath();
+            ctx.fillStyle = fillcolor;
+            ctx.moveTo(fromX,fromY);
+            ctx.lineTo(secondX,secondY);
+            ctx.lineTo(thirdX,thirdY);
+            ctx.closePath();
+            ctx.fill();
+         }
+
+         function createRectangle(fromX, fromY, secondX, secondY, thirdX, thirdY, fourthX, fourthY, fillcolor) {
+            ctx.beginPath();
+            ctx.fillStyle = fillcolor;
+            ctx.moveTo(fromX,fromY);
+            ctx.lineTo(secondX,secondY);
+            ctx.lineTo(thirdX,thirdY);
+            ctx.lineTo(fourthX,fourthY);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+         }
+
+         createTriangle(40,160,75,150,75,40,"yellow");
+         createTriangle(85,160,140,160,85,40, "yellow");
+         createRectangle(77,165,83,165,83,40,77,40,"black")
+         createRectangle(30,165,150,165,125,185,70,185,"green");
+      </script>
+
+   </body>
+</html>

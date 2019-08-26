@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="todo.css">
+      <title>Todo-list</title>
+   </head>
+
+   <body>
+      <div class="container">
+
+         <label for="task"></label>
+         <input type="text" name="task" id="task" placeholder="Add task.." autofocus>
+         <input type="submit" name="submit" onclick="addTask()" value="Add task"><br><br>
+
+         <h2>TODO-list</h2>
+         <div id="todoList">
+            <ul id="list"></ul>
+         </div>
+
+         <output name="result" id="outputResult"></output>
+      </div>
+
+      <script type="text/javascript" src="todo.js"></script>
+   </body>
+</html>

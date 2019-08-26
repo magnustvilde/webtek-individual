@@ -1,0 +1,9 @@
+1. Why do mobile phones usually ignore auto play on video elements?
+Answer: The reason for mobile devices to ignore autoplay was to protect the users bandwidth on the mobile device.
+However I found that recently this has been reversed. Now they are required to have muted as well as autoplay if they are to play.
+2. What will the CSS snippet at the end of this section do if the visitor is browsing on a device with 320 x 568 resolution?
+Answer: It will not take any action.
+3. Mention some of the advantages of having a single responsive website instead of dedicated versions like
+m.til.no for mobile and til.no for desktop?
+Answer: Updating the website is done soley on the one responsive website, which can be a strength. The web-browser
+will instantly be able to start buffering the page and will not have to redirect you to a different page.

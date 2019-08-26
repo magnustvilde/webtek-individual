@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Tax form</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <h2>Tax form</h2>
+
+   <div class="container">
+      <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post" id="taxform">
+         <label for="name">Real name:</label><br>
+         <input type="text" name="name" pattern="[A-Za-z -]+" autofocus placeholder="Your name.." required><br>
+
+         <label for="gender">Gender:</label><br>
+         <div class="chooseGender">
+            <input type="radio" name="gender" value="Male" required>Male<br>
+            <input type="radio" name="gender" value="Female">Female<br>
+         </div>
+
+         <label for="email">E-mail:</label><br>
+         <input type="email" name="email" placeholder="Email.." required><br>
+
+         <label for="birthdate">Birthdate:</label><br>
+         <input type="date" name="birthdate" max="1987-12-31" required><br>
+
+         <label for="hero">Hero name:</label><br>
+         <!-- The task requires a string without limitations, the way I interpret it. -->
+         <input type="text" name="hero" placeholder="Your heroname.." required><br>
+
+         <label for="spandex">Do you wear spandex?</label><br>
+         <div class="spandexBoolean">
+            <input type="radio" name="spandex" value="True" required>Yes<br>
+            <input type="radio" name="spandex" value="False">No<br>
+         </div>
+
+         <label for="strength">Strength:</label><br>
+         <select name="strenght" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+         </select><br>
+
+         <label for="speed">Speed:</label><br>
+         <select name="speed" required>
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+         </select><br>
+
+         <label for="intelligence">Intelligence:</label><br>
+         <select name="intelligence" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+         </select><br>
+
+         <label for="income">Income:</label><br>
+         <input type="number" name="income" id="income" min="1" placeholder="Your income.." required><br>
+
+         <!-- The task says to label this one with "Wealth" and not "Savings" -->
+         <label for="wealth">Wealth:</label><br>
+         <input type="number" name="wealth" id="wealth" min="1" placeholder="Your savings.." required><br>
+
+         <label for="tax">Tax:</label><br>
+         <input type="number" name="tax" id="tax" min="1" placeholder="Your calculated taxes.." disabled><br>
+      </form>
+      <button id="submitButton" type="submit" form="taxform">Submit tax form</button>
+   </div>
+
+   <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tax forms: Bar chart with lines</title>
+    <meta charset="UTF-8">
+    <script src="taxForms.js"></script>
+  </head>
+  <body>
+
+    <canvas id="chart" width="700" height="550"></canvas>
+
+    <script>
+      const canvas = document.getElementById('chart');
+      const context = canvas.getContext('2d');
+
+      /* Draw a line from (fromX, fromY) to (toX, toY) */
+        context.beginPath();
+        function drawLine(fromX, fromY, toX, toY) {
+        context.moveTo(toX, toY);
+        context.lineTo(fromX, fromY);
+        context.stroke();
+      }
+
+      /* Draw a text (string) on (x, y) */
+      function drawText(text, x, y) {
+        context.fillStyle = 'black';
+        context.fillText(text, x, y);
+      }
+
+      /* Draw a text and with a line to its right */
+      function drawLineWithText(text, fromX, fromY, toX, toY) {
+        drawText(text, fromX - 50, fromY + 10);
+        drawLine(fromX, fromY, toX, toY);
+      }
+
+      /* Insert your code here. */
+      var x=10;
+      var startX = 100;
+      var y = 50;
+      var endX = 500;
+      var width = 50;
+      var height = 20;
+
+
+
+      for (var line=1; line<11; line++) {
+         drawLineWithText(x*100000, startX, y*line, endX, y*line);
+         x--;
+      }
+
+      function createRectangle(color, x, y, width, height) {
+         context.fillStyle = color;
+         context.fillRect(x, y, width, height);
+      }
+      createRectangle("red", endX +50, y, width, height);
+      drawText("Income", endX+110, y+10);
+      createRectangle("blue", endX+50, y+30, width, height);
+      drawText("Wealth", endX+110, y+40);
+   </script>
+  </body>
+</html>

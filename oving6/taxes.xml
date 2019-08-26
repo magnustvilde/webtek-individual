@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+   <taxpayer>
+      <name>Nick Nedd</name>
+      <gender>Male</gender>
+      <email>nick@tick.com</email>
+      <birthday>1976</birthday>
+      <hero>The Tick</hero>
+      <spandex>Yes</spandex>
+      <strength>9</strength>
+      <speed>7</speed>
+      <intelligence>5</intelligence>
+      <wealth>0</wealth>
+      <income>90 287</income>
+      <tax>29 794</tax>
+   </taxpayer>
+
+   <taxpayer>
+      <name>Bruce Wayne</name>
+      <gender>Male</gender>
+      <email>bruce@wayneenterprise.com</email>
+      <birthday>1974</birthday>
+      <hero>Batman</hero>
+      <spandex>No</spandex>
+      <strength>7</strength>
+      <speed>4</speed>
+      <intelligence>9</intelligence>
+      <wealth>50 144 501</wealth>
+      <income>3 343 891</income>
+      <tax>11 1321 384</tax>
+   </taxpayer>
+
+   <taxpayer>
+      <name>Selina Kyle</name>
+      <gender>Female</gender>
+      <email>selina@whiskas.com</email>
+      <birthday>1997</birthday>
+      <hero>Catwoman</hero>
+      <spandex>Yes</spandex>
+      <strength>6</strength>
+      <speed>6</speed>
+      <intelligence>9</intelligence>
+      <wealth>2 987 323</wealth>
+      <income>0</income>
+      <tax>597 464</tax>
+   </taxpayer>
+</table>

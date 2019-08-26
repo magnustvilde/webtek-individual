@@ -1,0 +1,5 @@
+input[type=checkbox]:checked + label{
+  text-decoration: line-through;
+}
+
+/* I'm sorry for not styling the html file :'( Hope it doesn't upset your eyes too much! */

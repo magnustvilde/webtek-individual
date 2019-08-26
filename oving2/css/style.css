@@ -1,0 +1,22 @@
+img{
+    width: 150px;
+    height: auto;
+    border: solid #000;
+    border-width: 1px;
+}
+
+header{
+    font-family: courier;
+}
+
+body{
+    background-color: beige;
+}
+
+p{
+    font-family: Helvetica, Verdana;
+}
+
+footer{
+    outline: 1px dashed black;
+}

@@ -1,0 +1,57 @@
+form {
+   width: 90%;
+   margin: auto;
+}
+
+.container {
+   border-radius: 5px;
+   background-color: #f3f3f3;
+   padding: 20px;
+}
+
+h2 {
+   font-family: sans-serif;
+   margin-left: 5%;
+
+}
+
+input[type=text]:focus,[type=email]:focus,[type=date]:focus,[type=number]:focus {
+    background-color: lightblue;
+}
+
+input[type=text],[type=email],[type=date],select,[type=number] {
+   width: 100%;
+   position: relative;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border-radius: 5px;
+}
+
+
+select {
+   width: 10%;
+   padding: 12px 15px;
+}
+.chooseGender,.spandexBoolean {
+   width: 100%;
+   overflow: auto;
+   margin-right: 2rem;
+	background: rgb(230, 230, 230);
+   border-radius: 5px;
+}
+
+label {
+   font-family: "Courier", sans-serif;
+}
+
+button {
+   margin: 5%;
+   width: 90%;
+   cursor: pointer;
+   padding: 10px 15px;
+}
+
+
+
+/* I took a lot of inspiration from https://www.w3schools.com/css/css_form.asp */

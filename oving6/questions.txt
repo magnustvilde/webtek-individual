@@ -1,0 +1,22 @@
+1. Why does the following expression 0.1 + 0.2 === 0.3 evaluate to false in Javascript?
+Answer: When declaring variables "a=0.1" and "b=0.2", the floats are not stored as rational numbers.
+The numbers are stored in 64-bit floating point representation as the closest possible approximations to the actual float.
+This means that "a" becomes slightly greater than 0.1, and "b" becomes slightly smaller than 0.2. This means that "a + b !== 0.3".
+
+2. What does the method attribute on a form element decide?
+Answer: The method attribute decides how the form data should be sent.
+
+3. Explain why the form fields appear in the URL when the method on form element is
+changed to GET?
+Answer: GET is used for data that does not need to be secured. The GET method "stores"
+the data in the URL field, e.g. like a Google search.
+
+4. Why is it considered bad practice to only validate form input with HTML5 and/or
+Javascript?
+Answer: It is important to have server-side validation to check the data for incorrect or malicious data, as a last line of defence.
+HTML5 and Javascript validation is called client-side validation and is much more user friendy than server-side validation,
+but should not be the only validation as server-side validation is important.
+
+5. When is it appropriate to use textarea over input?
+Answer: Longer submission fields in a form should use textarea, smaller ones (usually one line) should use input.
+Textarea lets the user specify the size of the element, which makes it great for longer submissions.
